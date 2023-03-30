@@ -12,6 +12,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JRadioButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JButton;
 
 public class Example {
 
@@ -54,7 +55,7 @@ public class Example {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 672, 499);
+		frame.setBounds(100, 100, 688, 583);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -216,5 +217,29 @@ public class Example {
 		rdbtnNewRadioButton_3.setFont(new Font("Arial Black", Font.ITALIC, 16));
 		rdbtnNewRadioButton_3.setBounds(427, 357, 165, 21);
 		frame.getContentPane().add(rdbtnNewRadioButton_3);
+		
+		JButton btnNewButton = new JButton("Submit");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				if(chckbxNewCheckBox.isSelected()) {
+					JOptionPane.showMessageDialog(null, "You have Selected Option 1");
+				}
+				if(chckbxNewCheckBox_1.isSelected()) {
+					JOptionPane.showMessageDialog(null, "You have Selected Option 2");
+				}
+				if(chckbxNewCheckBox_2.isSelected()) {
+					JOptionPane.showMessageDialog(null, "You have Selected Option 3");
+				}
+				if(chckbxNewCheckBox_3.isSelected()) {
+					JOptionPane.showMessageDialog(null, "You have Selected Option 4");
+				}
+				
+				
+			}
+		});
+		btnNewButton.setFont(new Font("Arial", Font.BOLD, 18));
+		btnNewButton.setBounds(247, 447, 147, 40);
+		frame.getContentPane().add(btnNewButton);
 	}
 }
