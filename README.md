@@ -2,8 +2,9 @@
 
 This repository contains various projects developed using Swing, a graphical user interface (GUI) toolkit for Java. Each project focuses on different aspects of Swing components and functionality. Explore the projects below and have fun experimenting with Swing!
 
-<img src="javswing.png" width="300">
-
+<div style="display: flex; justify-content: center;">
+  <img src="javswing.png" width="300">
+</div>
  
 
 ## Projects
